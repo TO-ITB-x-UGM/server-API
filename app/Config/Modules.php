@@ -43,6 +43,30 @@ class Modules extends BaseModules
      *
      * @var string[]
      */
+
+    /**
+     * The Composer package list for Auto-Discovery
+     * This setting is optional.
+     *
+     * E.g.:
+     *   [
+     *       'only' => [
+     *           // List up all packages to auto-discover
+     *           'codeigniter4/shield',
+     *       ],
+     *   ]
+     *   or
+     *   [
+     *       'exclude' => [
+     *           // List up packages to exclude.
+     *           'pestphp/pest',
+     *       ],
+     *   ]
+     *
+     * @var array{only?: list<string>, exclude?: list<string>}
+     */
+    public $composerPackages = [];
+
     public $aliases = [
         'events',
         'filters',

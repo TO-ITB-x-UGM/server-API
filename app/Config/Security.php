@@ -91,10 +91,8 @@ class Security extends BaseConfig
      * --------------------------------------------------------------------------
      *
      * Redirect to previous page with error on failure.
-     *
-     * @var bool
      */
-    public $redirect = true;
+    public bool $redirect = false;
 
     /**
      * --------------------------------------------------------------------------

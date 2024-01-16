@@ -30,9 +30,8 @@ class Honeypot extends BaseConfig
     /**
      * Honeypot HTML Template
      *
-     * @var string
      */
-    public $template = '<label>{label}</label><input type="text" name="{name}" value=""/>';
+    public string $template = '<label>{label}</label><input type="text" name="{name}" value="">';
 
     /**
      * Honeypot container
@@ -40,4 +39,11 @@ class Honeypot extends BaseConfig
      * @var string
      */
     public $container = '<div style="display:none">{template}</div>';
+
+    /**
+     * The id attribute for Honeypot container tag
+     *
+     * Used when CSP is enabled.
+     */
+    public string $containerId = 'hpc';
 }
