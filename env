@@ -1,0 +1,22 @@
+#--------------------------------------------------------------------
+# ENVIRONMENT
+#--------------------------------------------------------------------
+
+CI_ENVIRONMENT = development
+
+
+app.baseURL = ''
+
+database.default.hostname = "127.0.0.1"
+database.default.database = tobguj
+database.default.username = root
+database.default.password = 
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
+
+passport.secretkey = "r9w8ur983r92y9238yr923yr9832yr92yr9823yr923yr"
+passport.expires = 4200
+
+Google.ClientId = "xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com"
+
+Answer.TokenKey = ""
