@@ -3,6 +3,10 @@
 namespace Config;
 
 use CodeIgniter\Config\BaseConfig;
+use CodeIgniter\Debug\ExceptionHandler;
+use CodeIgniter\Debug\ExceptionHandlerInterface;
+use Psr\Log\LogLevel;
+use Throwable;
 
 /**
  * Setup how the exception handler works.
