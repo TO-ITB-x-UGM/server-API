@@ -21,7 +21,7 @@ class Upload extends BaseController
             }
 
             return success([
-                'url' => base_url("assets/image/$newname")
+                'url' => "https://tryout.techdev.my.id/upload/assets/image/$newname"
             ]);
         }
     }
