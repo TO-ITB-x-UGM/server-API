@@ -33,6 +33,7 @@ $routes->setAutoRoute(false);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->group('api', function (RouteCollection $routes) {
+$routes->setAutoRoute(true);
 $routes->get('/',           'Home::index');
 $routes->get('ping',        'Home::ping');
 $routes->get('upload',      'Upload::apiManage');
